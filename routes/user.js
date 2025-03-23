@@ -28,11 +28,11 @@ const router = require('express').Router();
  *               password: 
  *                 type: string
  *                 description: User's password (must contain uppercase, lowercase, and a special character)
- *                 example: Joyp$
+ *                 example: Joyp$123
  *               confirmPassword: 
  *                 type: string
  *                 description: Must match the password
- *                 example: Joyp$
+ *                 example: Joyp$123
  *     responses: 
  *       201:
  *         description: User registered successfully
@@ -86,7 +86,7 @@ router.get('/verify/user/:token', verify);
  *               password: 
  *                 type: string
  *                 description: User's password
- *                 example: Joyp$
+ *                 example: Joyp$123
  *     responses: 
  *       200:
  *         description: User logged in successfully
@@ -179,11 +179,11 @@ router.post('/forgot/password', validateForgotPassword, forgotPassword);
  *               newPassword: 
  *                 type: string
  *                 description: New password
- *                 example: NewJoyp$
+ *                 example: NewJoyp$123
  *               confirmPassword: 
  *                 type: string
  *                 description: Must match new password
- *                 example: NewJoyp$
+ *                 example: NewJoyp$123
  *     responses: 
  *       200:
  *         description: Password reset successfully
@@ -218,11 +218,11 @@ router.post('/reset/password/:token', validateResetPassword, resetPassword);
  *               newPassword: 
  *                 type: string
  *                 description: New password
- *                 example: NewJoyp$
+ *                 example: NewJoyp24$
  *               confirmPassword: 
  *                 type: string
  *                 description: Must match new password
- *                 example: NewJoyp$
+ *                 example: NewJoyp24$
  *     responses: 
  *       200:
  *         description: Password changed successfully
