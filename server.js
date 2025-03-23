@@ -21,7 +21,7 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: "Mr Joshua Assignment On Swagger Documentation: Hello Frontend Developer's",
+      title: 'BASE_URL: https://documentation-9ky5.onrender.com',
       version: '1.0.0',
     },
   },
